@@ -26,3 +26,12 @@ class TaskManager:
             print(f'Tarea "{task}" eliminada con éxito.')
         else:
             print(f'Tarea "{task}" no encontrada.')
+
+    def list_tasks(self):
+        if not self.tasks:
+            print("No hay tareas.")
+        else:
+            print("Lista de tareas:")
+            for index, task in enumerate(self.tasks, start=1):
+                print(f"{index}. {task}")
+
