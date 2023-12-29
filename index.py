@@ -51,5 +51,13 @@ def main():
             task_manager.list_tasks()
             task_to_remove = input("Ingrese la tarea a eliminar: ")
             task_manager.remove_task(task_to_remove)
+        elif choice == '3':
+            task_manager.list_tasks()
+        elif choice == '4':
+            task_manager.save_tasks()
+            print("Saliendo del programa. ¡Hasta luego!")
+            break
+        else:
+            print("Opción no válida. Por favor, ingrese un número del 1 al 4.")
 
 
