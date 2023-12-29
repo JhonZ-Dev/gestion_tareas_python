@@ -15,3 +15,7 @@ class TaskManager:
     def save_tasks(self):
         with open(self.filename, 'wb') as file:
             pickle.dump(self.tasks, file)
+    def add_task(self, task):
+        self.tasks.append(task)
+        self.save_tasks()
+        print(f'Tarea "{task}" añadida con éxito.')
