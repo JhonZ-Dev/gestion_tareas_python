@@ -36,4 +36,13 @@ class TaskManager:
                 print(f"{index}. {task}")
 def main():
     task_manager = TaskManager()
+    while True:
+        print("\n--- Gestor de Tareas ---")
+        print("1. Agregar tarea")
+        print("2. Eliminar tarea")
+        print("3. Listar tareas")
+        print("4. Salir")
+
+        choice = input("Ingrese su elección (1-4): ")
+
 
