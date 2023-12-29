@@ -34,4 +34,6 @@ class TaskManager:
             print("Lista de tareas:")
             for index, task in enumerate(self.tasks, start=1):
                 print(f"{index}. {task}")
+def main():
+    task_manager = TaskManager()
 
