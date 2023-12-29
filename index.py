@@ -44,5 +44,12 @@ def main():
         print("4. Salir")
 
         choice = input("Ingrese su elección (1-4): ")
+        if choice == '1':
+            task = input("Ingrese la nueva tarea: ")
+            task_manager.add_task(task)
+        elif choice == '2':
+            task_manager.list_tasks()
+            task_to_remove = input("Ingrese la tarea a eliminar: ")
+            task_manager.remove_task(task_to_remove)
 
 
