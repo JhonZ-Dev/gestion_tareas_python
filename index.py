@@ -19,3 +19,10 @@ class TaskManager:
         self.tasks.append(task)
         self.save_tasks()
         print(f'Tarea "{task}" añadida con éxito.')
+    def remove_task(self, task):
+        if task in self.tasks:
+            self.tasks.remove(task)
+            self.save_tasks()
+            print(f'Tarea "{task}" eliminada con éxito.')
+        else:
+            print(f'Tarea "{task}" no encontrada.')
